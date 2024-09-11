@@ -26,6 +26,54 @@ body {
   border: 1px solid rgba(253, 237, 231, 1);
 }
 
+.bg-stroke:before {
+  content: url("/static/svg/stroke.svg");
+  display: block;
+  position: absolute;
+  top: -20px;
+  right: -4px;
+}
+
+.bg-digital-brush-2-star-image::before {
+  content: url("/static/svg/scribble-two-stars.svg");
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: -44px;
+}
+
+.bg-two-star:before {
+  content: url("/static/svg/two-stars.svg");
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -12px;
+}
+
+.bg-three-stars:before {
+  content: url("/static/svg/three-stars.svg");
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -32px;
+}
+
+.bg-elements:before {
+  content: url("/static/svg/elements.svg");
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -16px;
+}
+
+.bg-text-zig-image-2-stars:before {
+  content: url("/static/svg/scribble-zig.svg");
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: -24px;
+}
+
 .bg-text-zig-image:before {
   content: url("/static/svg/scribble-zig.svg");
   display: block;

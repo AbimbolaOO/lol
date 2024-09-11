@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
-import SecondaryButton from '@/components/Button/SecondaryButton';
-import GooglePlayIcon from '@/components/Icons/GooglePlayIcon';
+import SecondaryButton from "@/components/Button/SecondaryButton";
+import GooglePlayIcon from "@/components/Icons/GooglePlayIcon";
 
 const SimplifyDeliveryProcess = () => {
   return (
-    <div className="grid w-full grid-cols-[365px,auto] rounded-[50px] bg-ft-black px-20 py-[83px] text-white">
+    <div className="grid w-full grid-cols-[365px,auto] justify-between rounded-[50px] bg-ft-black px-20 pt-[83px] text-white">
       {/* Left content */}
       <div className="flex flex-col gap-[25px]">
         <div className="text-[40px] font-bold">
@@ -32,13 +32,13 @@ const SimplifyDeliveryProcess = () => {
         </div>
       </div>
       {/* Right content */}
-      <div>
+      <div className="relative flex h-full">
         <Image
           src="/static/img/darum-captain-large.png"
           alt="captain darum"
           width={667}
           height={550}
-          priority
+          className="object-contain object-bottom"
         />
       </div>
     </div>

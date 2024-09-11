@@ -13,9 +13,16 @@ const config: Config = {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        textColorCycle: {
+          '0%, 50%': { color: 'inherit', },  // Start and end with original color
+          '50%, 100%': { color: 'white' },         // Change to white in the middle
+        },
       },
+
+      // var(--animation-delay)
       animation: {
         scroll: 'scroll 20s linear infinite',
+        textColorCycle: 'textColorCycle 1s ease-in-out var(--animation-delay) both',
       },
       colors: {
         'primary': '#F46F3B',
@@ -32,12 +39,17 @@ const config: Config = {
         'hero-black': '#232222',
         'white-red-accent': 'rgba(255, 248, 237, 1)',
         'white-blue-accent': 'rgba(239, 244, 254, 1)',
+        'darum-accent': '#FFF8ED',
         'tx-blue': 'rgba(91, 145, 245, 1)',
         'button-dark-brown': 'rgba(244, 111, 59, 0.1)',
         'milky-white': 'rgba(255, 248, 237, 0.5)',
-
+        'grid-teal': 'rgba(115, 165, 175, 0.5)',
+        'grid-powder': 'rgba(239, 244, 254, 1)',
+        'grid-yellow': 'rgba(253, 237, 231, 1)'
       },
       backgroundImage: {
+        // 'bg-gradient-white': 'linear-gradient(180.51deg, #FEF8F5 89.96%, #FFFFFF 99.56%)',
+        'bg-gradient-white': 'linear-gradient(to bottom, rgba(254, 248, 245, 1), rgba(255, 255, 255, 1))',
         'bg-gradient': 'linear-gradient(to right, rgba(244, 105, 75, 1), rgba(244, 111, 59, 1), rgba(195, 76, 50, 1))',
         // 'bg-light-gradient': 'linear-gradient(to right, rgba(236, 106, 58, 1), rgba(249, 250, 251, 1))',
         'tx-gradient': 'linear-gradient(to right, rgba(244, 105, 75, 1), rgba(244, 111, 59, 1), rgba(195, 76, 50, 1))',

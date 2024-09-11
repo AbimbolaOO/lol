@@ -10,7 +10,6 @@ const AllTypesOfBusiness = () => {
           src="/static/img/scatteredIcons.png"
           alt="background image"
           fill
-          priority
         />
       </div>
       {/* Foreground content */}
