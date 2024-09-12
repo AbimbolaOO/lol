@@ -10,18 +10,18 @@ const DarumCaptainIsBuiltFor = () => {
           src="/static/img/scatteredIcons.png"
           alt="background image"
           fill
-          priority
+          className="object-contain"
         />
       </div>
       {/* Foreground content */}
-      <div className="z-10 mx-auto max-w-[1000px] py-[185px] text-center text-[40px] font-bold leading-[85px] text-milky-white">
+      <div className="z-10 mx-auto py-[185px] text-center text-[40px] font-bold leading-[85px] text-milky-white">
         <span
           className="animate-textColorCycle"
           style={{ "--animation-delay": `${1}s` } as React.CSSProperties}
         >
           Darum Captain is built for Logistic Managers
         </span>
-        ,{" "}
+        , <br />
         <span
           className="animate-textColorCycle"
           style={{ "--animation-delay": `${2}s` } as React.CSSProperties}
@@ -40,7 +40,7 @@ const DarumCaptainIsBuiltFor = () => {
           className="animate-textColorCycle"
           style={{ "--animation-delay": `${4}s` } as React.CSSProperties}
         >
-          Business Owners
+          Business <br /> Owners
         </span>
         , and{" "}
         <span

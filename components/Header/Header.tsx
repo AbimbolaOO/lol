@@ -1,15 +1,15 @@
 "use client";
 
-import clsx from 'clsx';
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import React from 'react';
+import clsx from "clsx";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
 
-import PrimaryButton from '../Button/PrimaryButton';
-import TertiaryButton from '../Button/TertiaryButton';
-import TurboIcon from '../Icons/TurboIcon';
-import HeaderDropDown from './HeaderDropDown';
+import PrimaryButton from "../Button/PrimaryButton";
+import TertiaryButton from "../Button/TertiaryButton";
+import TurboIcon from "../Icons/TurboIcon";
+import HeaderDropDown from "./HeaderDropDown";
 
 export default function Header() {
   const pathname = usePathname();
@@ -23,7 +23,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="sticky top-0 z-30 flex flex-col bg-white">
+    <div className="sticky top-0 z-50 flex flex-col bg-white">
       <div className="flex w-full shrink-0 justify-between px-[80px] py-[20px]">
         <Link href="/" className="flex items-center">
           <Image

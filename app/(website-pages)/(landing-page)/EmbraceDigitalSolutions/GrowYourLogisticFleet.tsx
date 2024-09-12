@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const GrowYourLogisticFleet = () => {
   return (
@@ -7,10 +7,18 @@ const GrowYourLogisticFleet = () => {
       {/* Background image */}
       <div className="relative h-full w-full">
         <Image
-          src="/static/img/bike-and-truck.png"
+          src="/static/img/bike-left.png"
           alt="background image"
           fill
           priority
+          className="object-contain object-top"
+        />
+        <Image
+          src="/static/img/truck-right.png"
+          alt="background image"
+          fill
+          priority
+          className="object-contain object-bottom"
         />
       </div>
 

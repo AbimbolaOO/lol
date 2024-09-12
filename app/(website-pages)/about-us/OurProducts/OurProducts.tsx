@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import MorphingCard from "@/components/Cards/MorphingCard";
+import MorphingCard from '@/components/Cards/MorphingCard';
+import GooglePlayIcon from '@/components/Icons/GooglePlayIcon';
 
 const OurProducts = () => {
   return (
@@ -11,7 +12,22 @@ const OurProducts = () => {
           Products
         </span>
       </div>
-      <MorphingCard />
+      <MorphingCard
+        rightTitle={
+          <>
+            Simplify delivery processes with{" "}
+            <span className="italic">Darum Captain</span>
+          </>
+        }
+        rightDescription="Track and manage orders in real-time and get the most efficient
+            routes for your drivers."
+        rightBtnLink="/turbo"
+        rightBtnText="Get on Android"
+        rightBtnIcon={<GooglePlayIcon />}
+        rightImg="package-man"
+        rightImgWidth={240}
+        rightImgHeight={202}
+      />
     </div>
   );
 };

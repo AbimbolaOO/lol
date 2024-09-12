@@ -75,13 +75,13 @@ export const AccordionCell: React.FC<IAccordion> = ({
   index,
 }) => {
   return (
-    <div className="flex flex-col border-b-[1px] border-ft-black text-ft-black">
+    <div className="flex flex-col border-b-[1px] border-ft-black text-[20px] font-medium leading-[35px] text-ft-black">
       {/* Header text */}
       <div
         onClick={() => handleStateChange(index)}
         className="flex cursor-pointer items-center justify-between py-[37px] pr-10"
       >
-        <div className="text-[20px] font-medium leading-[35px]">{title}</div>
+        <div className="">{title}</div>
         <ArrowDownIcon
           className={clsx(
             isOpen ? "rotate-180" : "rotate-0",

@@ -1,10 +1,10 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
-import PrimaryButton from "@/components/Button/PrimaryButton";
-import TertiaryButton from "@/components/Button/TertiaryButton";
-import GooglePlayIcon from "@/components/Icons/GooglePlayIcon";
-import TurboIcon from "@/components/Icons/TurboIcon";
+import PrimaryButton from '@/components/Button/PrimaryButton';
+import TertiaryButton from '@/components/Button/TertiaryButton';
+import GooglePlayIcon from '@/components/Icons/GooglePlayIcon';
+import TurboIcon from '@/components/Icons/TurboIcon';
 
 const DarumMyBusinessHero = () => {
   return (
@@ -31,7 +31,7 @@ const DarumMyBusinessHero = () => {
       </div>
       {/* Foreground content */}
       <div className="mx-20 mb-[131px] mt-[170px] flex flex-col items-center gap-12">
-        <div className="max-w-[750px] px-28 text-center text-6xl font-bold leading-[100px]">
+        <div className="px-28 text-center text-6xl font-bold leading-[100px]">
           The Ultimate <br /> App for{" "}
           <span className="bg-elements relative font-extrabold text-primary">
             Captains

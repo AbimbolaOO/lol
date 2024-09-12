@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import MorphingCard from "@/components/Cards/MorphingCard";
+import GooglePlayIcon from "@/components/Icons/GooglePlayIcon";
 
 const TopBusinessLower = () => {
   return (
@@ -16,8 +17,23 @@ const TopBusinessLower = () => {
         />
       </div>
       {/* Foreground content */}
-      <div className="mb-[250px] mt-[295px] px-20">
-        <MorphingCard />
+      <div className="z-40 mb-[250px] mt-[295px] flex px-20">
+        <MorphingCard
+          rightTitle={
+            <>
+              Simplify delivery processes with{" "}
+              <span className="italic">Darum Captain</span>
+            </>
+          }
+          rightDescription="Track and manage orders in real-time and get the most efficient
+            routes for your drivers."
+          rightBtnLink="/turbo"
+          rightBtnText="Get on Android"
+          rightBtnIcon={<GooglePlayIcon />}
+          rightImg="package-man"
+          rightImgWidth={240}
+          rightImgHeight={202}
+        />
       </div>
     </div>
   );

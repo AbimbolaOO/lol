@@ -1,17 +1,37 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import SecondaryButton from "../Button/SecondaryButton";
-import TertiaryButton from "../Button/TertiaryButton";
-import CircularBigTurboIcon from "../Icons/CircularBigTurboIcon";
-import CircularLocationIcon from "../Icons/CircularLocationIcon";
-import TurboIcon from "../Icons/TurboIcon";
-import TurboInlineIcon from "../Icons/TurboInlineIcon";
+import SecondaryButton from '../Button/SecondaryButton';
+import TertiaryButton from '../Button/TertiaryButton';
+import CircularBigTurboIcon from '../Icons/CircularBigTurboIcon';
+import CircularLocationIcon from '../Icons/CircularLocationIcon';
+import TurboIcon from '../Icons/TurboIcon';
+import TurboInlineIcon from '../Icons/TurboInlineIcon';
 
-const MorphingCard = () => {
+interface MorphingCardProps {
+  rightTitle: React.ReactNode;
+  rightDescription: string;
+  rightBtnIcon: React.ReactNode;
+  rightBtnText: string;
+  rightBtnLink: string;
+  rightImg: string;
+  rightImgWidth: number;
+  rightImgHeight: number;
+}
+
+const MorphingCard: React.FC<MorphingCardProps> = ({
+  rightTitle,
+  rightDescription,
+  rightBtnIcon,
+  rightBtnLink,
+  rightBtnText,
+  rightImg,
+  rightImgWidth,
+  rightImgHeight,
+}) => {
   return (
     <div className="flex gap-20">
       {/* First Card */}
-      <div className="group flex basis-1/2 flex-col justify-between rounded-[24px] bg-primary p-10 py-[50px] transition-all duration-1000 hover:basis-3/4">
+      <div className="group flex basis-1/2 flex-col justify-between overflow-hidden rounded-[24px] bg-primary p-10 py-[50px] transition-all duration-1000 hover:basis-3/4">
         {/* Header and Icon*/}
         <div className="flex items-center gap-[23px]">
           <div className="h-fit w-fit transition-all duration-1000 group-hover:rotate-45">
@@ -47,11 +67,11 @@ const MorphingCard = () => {
         {/* Header Image*/}
         <div className="relative flex justify-center rounded-2xl bg-[#EFF4FE] pt-[34px]">
           <Image
-            src="/static/img/package-man.png"
+            src={`/static/img/${rightImg}.png`}
             // fill
             // layout="responsive"
-            width={240}
-            height={202}
+            width={rightImgWidth}
+            height={rightImgHeight}
             className="object-contain object-bottom"
             alt="dispatcher image "
           />
@@ -59,19 +79,18 @@ const MorphingCard = () => {
         {/* Content */}
         <div className="grid grid-cols-[340px,260px] items-center gap-[21px]">
           <div className="text-[40px] font-bold leading-[56px] text-white">
-            Simplify delivery processes with{" "}
-            <span className="italic">Darum Captain</span>
+            {rightTitle}
           </div>
           <div className="translate-x-[300px] text-[20px] leading-[35px] text-white opacity-0 duration-1000 group-hover:translate-x-0 group-hover:opacity-100">
-            Track and manage orders in real-time and get the most efficient
-            routes for your drivers.
+            {rightDescription}
           </div>
         </div>
         <SecondaryButton
-          label="Start 2-week Trial"
-          href="/turbo"
+          label={rightBtnText}
+          href={rightBtnLink}
           bgColor="bg-white-blue-accent"
           textColor="text-tx-blue"
+          icon={rightBtnIcon}
         />
         {/* <div className="relative h-fit w-fit bg-red-500 group-hover:rotate-45"> */}
         <CircularLocationIcon className="absolute bottom-[50px] right-10 duration-1000 group-hover:-rotate-[60deg]" />

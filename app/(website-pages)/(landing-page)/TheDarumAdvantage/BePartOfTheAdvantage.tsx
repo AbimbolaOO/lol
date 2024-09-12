@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
-import PrimaryButton from '@/components/Button/PrimaryButton';
-import TertiaryButton from '@/components/Button/TertiaryButton';
+import PrimaryButton from "@/components/Button/PrimaryButton";
+import TertiaryButton from "@/components/Button/TertiaryButton";
 
 const BePartOfTheAdvantage = () => {
   return (
@@ -28,14 +28,14 @@ const BePartOfTheAdvantage = () => {
             Power-up your logistics operations with Darum and enjoy transparent,
             business-friendly pricing.
           </div>
-          <div className="flex gap-10 text-center text-[80px] font-medium *:items-center *:justify-center *:rounded-[20px] *:px-[65px] *:py-[56px] *:leading-[110px]">
+          <div className="flex gap-10 text-center text-[80px] font-medium *:flex *:flex-col *:items-center *:justify-center *:gap-2 *:rounded-[20px] *:px-[65px] *:py-[56px] *:leading-[110px]">
             <div className="border bg-bg-gradient text-white">
               <div>380+</div>
               <div className="text-[20px] leading-[27px]">
                 Logistic Companies
               </div>
             </div>
-            <div className="bg-light-gradient">
+            <div className="bg-light-gradient h-fit">
               <div>100%</div>
               <div className="text-[20px] leading-[27px]">
                 Logistic Companies

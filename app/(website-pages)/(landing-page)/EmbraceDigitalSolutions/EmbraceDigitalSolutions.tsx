@@ -16,7 +16,16 @@ const EmbraceDigitalSolutions = () => {
           </span>{" "}
           Solutions for Business Growth
         </div>
-        <MorphingCard />
+        <MorphingCard
+          rightTitle={<>Boost efficiency by leveraging data insights</>}
+          rightDescription="Be empowered with data tools that improve logistics workflows and reduce waste."
+          rightBtnLink="/turbo"
+          rightBtnText="Start 2-week Trial"
+          rightBtnIcon={<></>}
+          rightImg="wave-dispatcher"
+          rightImgWidth={282}
+          rightImgHeight={202}
+        />
         <SimplifyDeliveryProcess />
       </div>
       <GrowYourLogisticFleet />

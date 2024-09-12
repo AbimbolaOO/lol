@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 const gridOneImg = [
   "three-darum-men.png",
@@ -25,7 +25,7 @@ const AboutUsHero = () => {
               Growth
             </span>
           </div>
-          <div className="text-darum-accent text-xl font-normal leading-[35px]">
+          <div className="text-xl font-normal leading-[35px] text-darum-accent">
             Our goal is to empower you with the insights and expertise needed to
             make strategic decisions and drive expansion.
           </div>
@@ -38,7 +38,7 @@ const AboutUsHero = () => {
           <div className="relative">
             <Image
               src={`/static/img/three-darum-men.png`}
-              layout="intrinsic"
+              // layout="intrinsic"
               width={300}
               height={225}
               priority
@@ -49,7 +49,7 @@ const AboutUsHero = () => {
           <div className="relative">
             <Image
               src={`/static/img/stima-boda.png`}
-              layout="intrinsic"
+              // layout="intrinsic"
               width={300}
               height={225}
               priority
@@ -60,7 +60,7 @@ const AboutUsHero = () => {
           <div className="relative">
             <Image
               src={`/static/img/two-darum-men.png`}
-              layout="intrinsic"
+              // layout="intrinsic"
               height={225}
               width={300}
               priority
@@ -75,7 +75,7 @@ const AboutUsHero = () => {
             <Image
               //   src={`/static/img/woman-with-mic.png`}
               src={`/static/img/two-darum-men.png`}
-              layout="intrinsic"
+              // layout="intrinsic"
               width={300}
               height={225}
               priority
@@ -86,7 +86,7 @@ const AboutUsHero = () => {
           <div className="relative">
             <Image
               src={`/static/img/darum-family.png`}
-              layout="intrinsic"
+              // layout="intrinsic"
               width={300}
               height={225}
               priority
@@ -97,7 +97,7 @@ const AboutUsHero = () => {
           <div className="relative">
             <Image
               src={`/static/img/darum-ceo-in-box.png`}
-              layout="intrinsic"
+              // layout="intrinsic"
               height={225}
               width={300}
               priority
