@@ -74,7 +74,7 @@ const AboutUsHero = () => {
           <div className="relative">
             <Image
               //   src={`/static/img/woman-with-mic.png`}
-              src={`/static/img/two-darum-men.png`}
+              src={`/static/img/darum-mic-lady.png`}
               // layout="intrinsic"
               width={300}
               height={225}

@@ -1,16 +1,34 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 const DarumCaptainIsBuiltFor = () => {
   return (
     <div className="grid h-fit *:col-start-1 *:row-start-1">
       {/* Background image */}
       <div className="relative h-full w-full bg-primary">
-        <Image
+        {/* <Image
           src="/static/img/scatteredIcons.png"
           alt="background image"
           fill
           className="object-contain"
+        /> */}
+        <Image
+          src="/static/img/circular-icons.png"
+          alt="background image"
+          fill
+          className="object-contain"
+        />
+        <Image
+          src="/static/img/left-side.png"
+          alt="background image"
+          fill
+          className="object-contain object-left-bottom"
+        />
+        <Image
+          src="/static/img/right-side.png"
+          alt="background image"
+          fill
+          className="object-contain object-right-bottom"
         />
       </div>
       {/* Foreground content */}

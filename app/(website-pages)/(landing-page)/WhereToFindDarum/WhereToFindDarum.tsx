@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import BusinessDayIcon from "@/components/Icons/BusinessDayIcon";
-import LegitNgIcon from "@/components/Icons/LegitNgIcon";
-import ProductHuntIcon from "@/components/Icons/ProductHuntIcon";
-import TerminalIcon from "@/components/Icons/TerminalIcon";
-import VanguardIcon from "@/components/Icons/VanguardIcon";
+import BusinessDayIcon from '@/components/Icons/BusinessDayIcon';
+import LegitNgIcon from '@/components/Icons/LegitNgIcon';
+import ProductHuntIcon from '@/components/Icons/ProductHuntIcon';
+import TerminalAfricaIcon from '@/components/Icons/TerminalAfricaIcon';
+import TerminalIcon from '@/components/Icons/TerminalIcon';
+import VanguardIcon from '@/components/Icons/VanguardIcon';
 
 const WhereToFindDarum = () => {
   return (
@@ -19,7 +20,7 @@ const WhereToFindDarum = () => {
       </div>
       <div className="grid grid-flow-col gap-[100px] py-[60px] pt-[100px]">
         <VanguardIcon /> <BusinessDayIcon /> <ProductHuntIcon /> <LegitNgIcon />{" "}
-        <TerminalIcon />
+        <TerminalAfricaIcon className="text-black" />
       </div>
     </div>
   );

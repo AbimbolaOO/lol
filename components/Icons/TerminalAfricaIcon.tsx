@@ -1,8 +1,14 @@
-import React from "react";
+import React from 'react';
 
-const TerminalAfricaIcon = () => {
+const TerminalAfricaIcon = ({ className }: { className?: string }) => {
   return (
-    <svg width="127" height="36" viewBox="0 0 127 36" fill="none">
+    <svg
+      width="127"
+      height="36"
+      viewBox="0 0 127 36"
+      fill="none"
+      className={className}
+    >
       <mask
         id="mask0_1897_21881"
         maskUnits="userSpaceOnUse"

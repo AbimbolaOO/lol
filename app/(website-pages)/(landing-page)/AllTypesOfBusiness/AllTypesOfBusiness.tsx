@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 const AllTypesOfBusiness = () => {
   return (
@@ -7,10 +7,22 @@ const AllTypesOfBusiness = () => {
       {/* Background image */}
       <div className="relative h-[500px] w-full bg-primary">
         <Image
-          src="/static/img/scatteredIcons.png"
+          src="/static/img/circular-icons.png"
           alt="background image"
           fill
           className="object-contain"
+        />
+        <Image
+          src="/static/img/left-side.png"
+          alt="background image"
+          fill
+          className="object-contain object-left-bottom"
+        />
+        <Image
+          src="/static/img/right-side.png"
+          alt="background image"
+          fill
+          className="object-contain object-right-bottom"
         />
       </div>
       {/* Foreground content */}
