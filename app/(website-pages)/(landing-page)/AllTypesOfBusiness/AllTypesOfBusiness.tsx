@@ -10,7 +10,7 @@ const AllTypesOfBusiness = () => {
           src="/static/img/circular-icons.png"
           alt="background image"
           fill
-          className="object-contain"
+          className="object-contain object-center"
         />
         <Image
           src="/static/img/left-side.png"

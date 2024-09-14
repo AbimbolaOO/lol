@@ -1,20 +1,24 @@
 import React from 'react';
 
+interface CarouselIconData {
+  icon: React.ReactNode;
+  key: string;
+}
 interface CarouselProps {
-  icons: React.ReactNode[];
+  iconData: CarouselIconData[];
 }
 
-const Carousel: React.FC<CarouselProps> = ({ icons }) => {
+const Carousel: React.FC<CarouselProps> = ({ iconData }) => {
   return (
     <div className="flex w-full flex-nowrap overflow-hidden py-4">
       <div className="flex animate-scroll items-center *:ml-14">
-        {icons?.map((icon: React.ReactNode, index) => (
-          <React.Fragment key={index}>{icon}</React.Fragment>
+        {iconData?.map(({ icon, key }: CarouselIconData, index) => (
+          <div key={key}>{icon}</div>
         ))}
       </div>
       <div className="flex animate-scroll items-center *:ml-14">
-        {icons?.map((icon: React.ReactNode, index) => (
-          <React.Fragment key={index}>{icon}</React.Fragment>
+        {iconData?.map(({ icon, key }: CarouselIconData, index) => (
+          <div key={key}>{icon}</div>
         ))}
       </div>
     </div>

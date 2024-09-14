@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 const OurMission = () => {
   return (
@@ -7,7 +7,7 @@ const OurMission = () => {
       {/* Background image */}
       <div className="w-ful relative h-full overflow-hidden">
         <Image
-          src="/static/img/bike-left.png"
+          src="/static/img/truck-right-steep.png"
           fill
           priority
           alt="background image"
@@ -17,12 +17,10 @@ const OurMission = () => {
 
       {/* Foreground content */}
       <div className="mx-20 mt-[170px] grid grid-cols-2 gap-[117px]">
-        {/* <div className="z-10 flex flex-col gap-[110px] pb-[150px] pt-[111px]"> */}
         {/* Left image part */}
         <div className="relative">
           <Image
             src={`/static/img/darum-world.png`}
-            //   layout="responsive"
             width={600}
             height={600}
             alt={`hero image a`}
