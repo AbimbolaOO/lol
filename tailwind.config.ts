@@ -13,16 +13,16 @@ const config: Config = {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
-        textColorCycle: {
-          '0%, 50%': { color: 'inherit', },  // Start and end with original color
-          '50%, 100%': { color: 'white' },         // Change to white in the middle
+        blink: {
+          '0%, 100%': { color: 'inherit' },  // Start and end with original color
+          '50%': { color: 'white' },         // Change to white in the middle
         },
       },
 
-      // var(--animation-delay)
       animation: {
         scroll: 'scroll 20s linear infinite',
-        textColorCycle: 'textColorCycle 1s ease-in-out var(--animation-delay) both',
+        blink: 'blink 2s ease-in-out both'
+        // blink: 'blink 1s ease-in-out var(--animation-delay) both'
       },
       colors: {
         'primary': '#F46F3B',

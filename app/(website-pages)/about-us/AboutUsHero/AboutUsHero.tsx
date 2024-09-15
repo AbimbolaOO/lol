@@ -7,7 +7,7 @@ const gridOneImg = [
   "two-darum-men.png",
 ];
 const gridTwoImg = [
-  "woman-with-mic.png",
+  "darum-mic-lady.png",
   "darum-family.png",
   "darum-ceo-in-box.png",
 ];
@@ -34,77 +34,32 @@ const AboutUsHero = () => {
 
       {/* right image grid */}
       <div className="grid grid-cols-2 gap-[30px]">
-        <div className="flex h-full flex-col gap-[30px]">
-          <div className="relative">
+        <div className="relative flex flex-col gap-[30px]">
+          {gridOneImg.map((img, index) => (
             <Image
-              src={`/static/img/three-darum-men.png`}
-              // layout="intrinsic"
+              key={index}
+              src={`/static/img/${img}`}
               width={300}
               height={225}
               priority
               alt={`hero image a`}
               className="h-[auto] w-[300px] object-contain"
             />
-          </div>
-          <div className="relative">
-            <Image
-              src={`/static/img/stima-boda.png`}
-              // layout="intrinsic"
-              width={300}
-              height={225}
-              priority
-              alt={`hero image a`}
-              className="h-[auto] w-[300px] object-contain"
-            />
-          </div>
-          <div className="relative">
-            <Image
-              src={`/static/img/two-darum-men.png`}
-              // layout="intrinsic"
-              height={225}
-              width={300}
-              priority
-              alt={`hero image a`}
-              className="h-[auto] w-[300px] object-contain"
-            />
-          </div>
+          ))}
         </div>
-        {/* col 2 */}
-        <div className="flex h-full flex-col gap-[30px]">
-          <div className="relative">
+
+        <div className="relative flex flex-col gap-[30px]">
+          {gridTwoImg.map((img, index) => (
             <Image
-              //   src={`/static/img/woman-with-mic.png`}
-              src={`/static/img/darum-mic-lady.png`}
-              // layout="intrinsic"
+              key={index}
+              src={`/static/img/${img}`}
               width={300}
               height={225}
               priority
               alt={`hero image a`}
               className="h-[auto] w-[300px] object-contain"
             />
-          </div>
-          <div className="relative">
-            <Image
-              src={`/static/img/darum-family.png`}
-              // layout="intrinsic"
-              width={300}
-              height={225}
-              priority
-              alt={`hero image a`}
-              className="h-[auto] w-[300px] object-contain"
-            />
-          </div>
-          <div className="relative">
-            <Image
-              src={`/static/img/darum-ceo-in-box.png`}
-              // layout="intrinsic"
-              height={225}
-              width={300}
-              priority
-              alt={`hero image a`}
-              className="h-[auto] w-[300px] object-contain"
-            />
-          </div>
+          ))}
         </div>
       </div>
     </div>
