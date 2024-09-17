@@ -45,10 +45,14 @@ const config: Config = {
         'milky-white': 'rgba(255, 248, 237, 0.5)',
         'grid-teal': 'rgba(115, 165, 175, 0.5)',
         'grid-powder': 'rgba(239, 244, 254, 1)',
-        'grid-yellow': 'rgba(253, 237, 231, 1)'
+        'grid-yellow': 'rgba(253, 237, 231, 1)',
+        'powder-blue': 'rgba(91, 145, 245, 0.1)',
+        'powder-yellow': "rgba(217, 217, 217, 1)",
       },
       backgroundImage: {
         // 'bg-gradient-white': 'linear-gradient(180.51deg, #FEF8F5 89.96%, #FFFFFF 99.56%)',
+        // 'line-gradient': 'linear-gradient(262.94deg, #C34C32 9.61%, #F46F3B 49.28%, #F4694B 89.76%)',
+        'line-gradient': 'linear-gradient(to bottom, rgba(195, 76, 50, 1), rgba(244, 111, 59, 1), rgba(244, 105, 75, 1))',
         'bg-gradient-white': 'linear-gradient(to bottom, rgba(254, 248, 245, 1), rgba(255, 255, 255, 1))',
         'bg-gradient': 'linear-gradient(to right, rgba(244, 105, 75, 1), rgba(244, 111, 59, 1), rgba(195, 76, 50, 1))',
         // 'bg-light-gradient': 'linear-gradient(to right, rgba(236, 106, 58, 1), rgba(249, 250, 251, 1))',

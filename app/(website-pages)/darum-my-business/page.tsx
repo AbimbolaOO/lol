@@ -1,21 +1,7 @@
-import React from "react";
-
-import CaptainIsBuilt from "./CaptainIsBuilt/CaptainIsBuilt";
-import DarumCaptainIsBuiltFor from "./DarumCaptainIsBuiltFor/DarumCaptainIsBuiltFor";
-import DarumMyBusinessHero from "./DarumMyBusinessHero/DarumMyBusinessHero";
-import Fleets from "./Fleets/Fleets";
-import TopBusiness from "./TopBusiness/TopBusiness";
+import React from 'react';
 
 const page = () => {
-  return (
-    <div>
-      <DarumMyBusinessHero />
-      <Fleets />
-      <CaptainIsBuilt />
-      <DarumCaptainIsBuiltFor />
-      <TopBusiness />
-    </div>
-  );
+  return <div>Darum My Business</div>;
 };
 
 export default page;

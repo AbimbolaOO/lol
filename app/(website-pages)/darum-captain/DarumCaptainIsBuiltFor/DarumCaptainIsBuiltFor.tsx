@@ -9,7 +9,7 @@ const DarumCaptainIsBuiltFor = () => {
       {/* Background image */}
       <div className="relative h-full w-full bg-primary">
         <Image
-          src="/static/img/circular-icons.png"
+          src="/static/img/circular-icons-smx.png"
           alt="background image"
           fill
           className="object-contain"

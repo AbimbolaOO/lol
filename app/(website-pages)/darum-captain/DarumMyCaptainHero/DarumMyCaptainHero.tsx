@@ -6,7 +6,7 @@ import TertiaryButton from '@/components/Button/TertiaryButton';
 import GooglePlayIcon from '@/components/Icons/GooglePlayIcon';
 import TurboIcon from '@/components/Icons/TurboIcon';
 
-const DarumMyBusinessHero = () => {
+const DarumMyCaptainHero = () => {
   return (
     <div className="grid h-fit w-full px-20 *:col-start-1 *:row-start-1">
       {/* Background image */}
@@ -61,4 +61,4 @@ const DarumMyBusinessHero = () => {
   );
 };
 
-export default DarumMyBusinessHero;
+export default DarumMyCaptainHero;

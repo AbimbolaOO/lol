@@ -24,10 +24,11 @@ const HeaderDropDown: React.FC<HeaderDropDownProps> = ({ label }) => {
         {/* Empty space div */}
         <div className="h-10"></div>
         {/* Main dropdown content */}
-        <div className="shadow-drop-down flex cursor-default overflow-hidden rounded-[25px] bg-white">
+        <div className="flex cursor-default overflow-hidden rounded-[25px] bg-white shadow-drop-down">
           {/* Header dropdown card area */}
           <div className="flex gap-10 px-10 py-[50px] pr-9">
             <HeaderDropDownCard
+              link="darum-turbo"
               label="Darum Turbo"
               description="Shift your logistics into high gear, Turbo charge your logistics operations with the power of technology"
               icon={<CircularTurboIcon />}
@@ -36,6 +37,7 @@ const HeaderDropDown: React.FC<HeaderDropDownProps> = ({ label }) => {
             {/* <div className="bg-tertiary h-full w-1"></div> */}
 
             <HeaderDropDownCard
+              link="darum-captain"
               label="Darum Captain"
               description="Keep drivers accountable with fleet visibility tools that ensure faster deliveries through adequate route planning"
               icon={<CircularTruck />}
@@ -43,7 +45,7 @@ const HeaderDropDown: React.FC<HeaderDropDownProps> = ({ label }) => {
           </div>
 
           {/* Part with image */}
-          <div className="bg-tertiary flex w-[350px] flex-col gap-[12px] p-[20px]">
+          <div className="flex w-[350px] flex-col gap-[12px] bg-tertiary p-[20px]">
             <Image
               src="/static/img/download-captain-log.png"
               width="310"
@@ -52,12 +54,12 @@ const HeaderDropDown: React.FC<HeaderDropDownProps> = ({ label }) => {
               priority
             />
             <div className="flex flex-col *:leading-8">
-              <p className="text-tx-black font-medium">
+              <p className="font-medium text-tx-black">
                 Download the Darum Captain App
               </p>
               <Link
                 href="android://download-darum.ng"
-                className="text-primary font-bold leading-[30px]"
+                className="font-bold leading-[30px] text-primary"
               >
                 Get for Android
               </Link>

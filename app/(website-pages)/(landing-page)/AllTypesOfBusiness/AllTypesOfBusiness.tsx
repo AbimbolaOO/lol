@@ -7,7 +7,7 @@ const AllTypesOfBusiness = () => {
       {/* Background image */}
       <div className="relative h-[500px] w-full bg-primary">
         <Image
-          src="/static/img/circular-icons.png"
+          src="/static/img/circular-icons-sm.png"
           alt="background image"
           fill
           className="object-contain object-center"
