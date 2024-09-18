@@ -1,15 +1,19 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
-import TertiaryButton from '@/components/Button/TertiaryButton';
+import TertiaryButton from "@/components/Button/TertiaryButton";
+import TurboInlineIcon from "@/components/Icons/TurboInlineIcon";
 
 const StreamlineOperations = () => {
   return (
     <div className="flex flex-col gap-[140px]">
       <div className="text-center text-[60px] font-bold leading-[100px]">
         Here's what your Business
-        <br /> can do with <span className="text-primary">
-          Darum Turbo
+        <br /> can do with{" "}
+        <span className="inline-flex text-primary">
+          Darum T
+          <TurboInlineIcon className="-mx-3 -ml-5 mt-4 self-center p-0" />
+          rbo
         </span>{" "}
       </div>
       <div className="flex flex-col gap-[58px]">

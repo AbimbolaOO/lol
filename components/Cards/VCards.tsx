@@ -1,12 +1,14 @@
-import clsx from 'clsx';
-import Image from 'next/image';
-import React from 'react';
+import clsx from "clsx";
+import Image from "next/image";
+import React from "react";
 
 interface VCardsProps {
   label: string;
   description: string;
   img: string;
   classes?: string;
+  imgClasses?: string;
+  imgBoxClasses?: string;
   width: number;
   height: number;
 }
@@ -15,9 +17,10 @@ const VCards: React.FC<VCardsProps> = ({
   label,
   description,
   img,
-  classes,
   width,
   height,
+  imgClasses,
+  imgBoxClasses,
 }) => {
   return (
     <div className="flex h-fit flex-col gap-6">
@@ -28,8 +31,8 @@ const VCards: React.FC<VCardsProps> = ({
         <div className="text-xl leading-[35px]">{description}</div>
         <div
           className={clsx(
-            "relative flex h-[559px] w-full items-center justify-center rounded-[24px]",
-            classes,
+            "relative flex h-[559px] w-full items-center justify-center overflow-hidden rounded-[24px]",
+            imgBoxClasses,
           )}
         >
           <Image
@@ -38,7 +41,7 @@ const VCards: React.FC<VCardsProps> = ({
             // fill
             width={width}
             height={height}
-            className="object-contain object-center"
+            className={clsx("object-contain", imgClasses)}
           />
         </div>
       </div>

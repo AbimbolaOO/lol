@@ -1,8 +1,14 @@
 import React from 'react';
 
-const TableIcon = () => {
+const TableIcon = ({ className }: { className?: string }) => {
   return (
-    <svg width="1290" height="495" viewBox="0 0 1290 495" fill="none">
+    <svg
+      width="1290"
+      height="495"
+      viewBox="0 0 1290 495"
+      fill="none"
+      className={className}
+    >
       <g filter="url(#filter0_d_798_7317)">
         <g clipPath="url(#clip0_798_7317)">
           <rect x="5" y="5" width="1280" height="485" rx="24" fill="white" />

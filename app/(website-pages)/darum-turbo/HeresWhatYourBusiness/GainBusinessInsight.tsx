@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import VCards from '@/components/Cards/VCards';
+import VCards from "@/components/Cards/VCards";
 
 const GainBusinessInsight = () => {
   return (
-    <div className="bg-line-gradient mx-20 mb-[120px] grid grid-cols-2 gap-[2px]">
+    <div className="mx-20 mb-[120px] grid grid-cols-2 gap-[2px] bg-line-gradient">
       <div className="mb-[2px] bg-white pb-[31px] pr-[78px] pt-[71px]">
         <VCards
           label="Gain Business Insights"
           description="Gain end-to-end visibility into logistics operations with actionable
           reports and data-driven insights."
           img="pie-chart"
-          classes="bg-powder-blue"
+          imgBoxClasses="bg-powder-blue"
           width={307}
           height={270}
         />
@@ -21,7 +21,7 @@ const GainBusinessInsight = () => {
           label="Improve Productivity"
           description="Effortlessly manage customer orders from start to finish, guaranteeing fast, accurate, and reliable deliveries."
           img="road"
-          classes="bg-powder-yellow"
+          imgBoxClasses="bg-powder-yellow"
           width={559}
           height={300}
         />

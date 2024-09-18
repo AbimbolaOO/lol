@@ -11,6 +11,7 @@ import TertiaryButton from '../Button/TertiaryButton';
 import TurboIcon from '../Icons/TurboIcon';
 import HeaderDropDown from './HeaderDropDown';
 
+// Deprecated code
 export default function Header() {
   const pathname = usePathname();
 
@@ -43,14 +44,14 @@ export default function Header() {
               href={link.href}
               key={link.href}
               className={clsx(
-                link.label === "Darum My Business" &&
+                pathname.includes(link.href) &&
                   "bg-button-gradient font-medium",
                 "flex items-center rounded-[8px] px-[16px] py-[12px] text-[12px]",
               )}
             >
               <div
                 className={clsx(
-                  link.label === "Darum My Business"
+                  pathname.includes(link.href)
                     ? "bg-tx-gradient bg-clip-text text-transparent"
                     : "text-tx-black",
                 )}

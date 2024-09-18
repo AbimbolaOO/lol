@@ -14,7 +14,7 @@ const VehicleUpdateReminders = () => {
           downtime and maximizing efficiency.
         </div>
       </div>
-      <TableIcon />
+      <TableIcon className="w-full" />
     </div>
   );
 };

@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 
 const CustomizeBranTemplate = () => {
   return (
@@ -14,7 +14,7 @@ const CustomizeBranTemplate = () => {
           accelerate business growth.
         </div>
       </div>
-      <div className="rounded-[24px] border-[1.6px] border-primary px-[50px] py-[42px]">
+      <div className="rounded-[24px] border-[1.6px] border-primary bg-powder-yellow px-[50px] py-[42px]">
         <div className="relative flex h-[485px] items-center justify-between">
           <Image
             src="/static/img/left-lego.png"
