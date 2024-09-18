@@ -29,7 +29,9 @@ const DarumCaptainIsBuiltFor = () => {
       </div>
       {/* Foreground content */}
       <BlinkingText>
-        <span>Darum Captain is built for Logistic Managers</span>
+        <span className="bg-two-far-star relative">
+          Darum Captain is built for Logistic Managers
+        </span>
         , <br />
         <span>Operations Managers</span>, <span>Fleet Managers</span>,{" "}
         <span>

@@ -1,11 +1,13 @@
 "use client";
+import clsx from 'clsx';
 import React, { useEffect, useRef } from 'react';
 
 interface BlinkingTextProps {
   children: React.ReactNode;
+  classes?: string;
 }
 
-const BlinkingText: React.FC<BlinkingTextProps> = ({ children }) => {
+const BlinkingText: React.FC<BlinkingTextProps> = ({ children, classes }) => {
   const textContainer = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -33,7 +35,10 @@ const BlinkingText: React.FC<BlinkingTextProps> = ({ children }) => {
   return (
     <div
       ref={textContainer}
-      className="z-10 mx-auto py-[185px] text-center text-[40px] font-bold leading-[85px] text-milky-white"
+      className={clsx(
+        "z-10 mx-auto py-[185px] text-center text-[40px] font-bold leading-[85px] text-milky-white",
+        classes,
+      )}
     >
       {children}
     </div>

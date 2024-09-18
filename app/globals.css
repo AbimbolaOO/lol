@@ -96,6 +96,14 @@ body {
   left: -44px;
 }
 
+.bg-two-far-star:before {
+  content: url("/static/svg/two-far-stars.svg");
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+}
+
 .bg-two-star:before {
   content: url("/static/svg/two-stars.svg");
   display: block;

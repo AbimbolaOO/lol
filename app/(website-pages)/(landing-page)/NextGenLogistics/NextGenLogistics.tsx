@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import SecondaryButton from "@/components/Button/SecondaryButton";
+import BlinkingText from '@/components/BlinkingText/BlinkingText';
+import SecondaryButton from '@/components/Button/SecondaryButton';
 
 const NextGenLogistics = () => {
   return (
     <div className="grid grid-rows-2">
-      {/* <div className="z-10 col-span-1 col-start-1 row-span-2 row-start-1 mx-20 rounded-[50px] bg-bg-gradient px-[190px] py-[89px] text-center text-[40px] font-bold leading-[70px] text-white"> */}
       <div className="z-10 col-span-1 col-start-1 row-span-2 row-start-1 mx-20 rounded-[50px] bg-bg-gradient px-[190px] py-[89px]">
-        <div className="z-10 mx-auto text-center text-[40px] font-bold leading-[85px] text-milky-white">
+        <BlinkingText classes="!py-0">
           <span
             className="animate-textColorCycle"
             style={{ "--animation-delay": `${1}s` } as React.CSSProperties}
@@ -36,7 +36,7 @@ const NextGenLogistics = () => {
             Your Customers
           </span>
           .
-        </div>
+        </BlinkingText>
         <div className="flex items-center justify-center gap-3 pt-[39px]">
           <SecondaryButton href="http://lol" label="Get Started" />
           <SecondaryButton href="http://lol" label="Book Demo" />
