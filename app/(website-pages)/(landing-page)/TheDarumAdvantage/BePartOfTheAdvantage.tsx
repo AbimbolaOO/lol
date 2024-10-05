@@ -3,6 +3,7 @@ import React from 'react';
 
 import PrimaryButton from '@/components/Button/PrimaryButton';
 import TertiaryButton from '@/components/Button/TertiaryButton';
+import NumberCountUp from '@/components/NumberCountUp/NumberCountUp';
 
 const BePartOfTheAdvantage = () => {
   return (
@@ -29,17 +30,15 @@ const BePartOfTheAdvantage = () => {
             business-friendly pricing.
           </div>
           <div className="flex gap-10 text-center text-[80px] font-medium *:flex *:flex-col *:items-center *:justify-center *:gap-2 *:rounded-[20px] *:px-[65px] *:py-[56px] *:leading-[110px]">
-            <div className="h-fit border bg-bg-gradient text-white">
-              <div>380+</div>
+            <div className="h-fit w-[320px] border bg-bg-gradient text-white">
+              <NumberCountUp attachment="+" target={300} />
               <div className="text-[20px] leading-[27px]">
                 Logistic Companies
               </div>
             </div>
-            <div className="bg-light-gradient h-fit">
-              <div>100%</div>
-              <div className="text-[20px] leading-[27px]">
-                Logistic Companies
-              </div>
+            <div className="bg-light-gradient h-fit w-[320px]">
+              <NumberCountUp attachment="%" target={100} />
+              <div className="text-[20px] leading-[27px]">Fleet Visibility</div>
             </div>
           </div>
         </div>

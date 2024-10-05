@@ -1,0 +1,30 @@
+/* Define custom property --num and animation */
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --target {
+  syntax: "<integer>";
+  initial-value: 100;
+  inherits: false;
+}
+
+.counter {
+  animation: counter 2s forwards ease-in-out;
+  counter-reset: num var(--num);
+}
+
+.counter::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: var(--target);
+  }
+}

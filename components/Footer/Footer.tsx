@@ -1,15 +1,15 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
-import EmailIcon from '../Icons/EmailIcon';
-import FacebookIcon from '../Icons/FacebookIcon';
-import InstagramIcon from '../Icons/InstagramIcon';
-import LinkedInIcon from '../Icons/LinkedInIcon';
-import LocationIcon from '../Icons/LocationIcon';
-import PhoneIcon from '../Icons/PhoneIcon';
-import XIcon from '../Icons/XIcon';
-import FooterForm from './FooterForm';
+import EmailIcon from "../Icons/EmailIcon";
+import FacebookIcon from "../Icons/FacebookIcon";
+import InstagramIcon from "../Icons/InstagramIcon";
+import LinkedInIcon from "../Icons/LinkedInIcon";
+import LocationIcon from "../Icons/LocationIcon";
+import PhoneIcon from "../Icons/PhoneIcon";
+import XIcon from "../Icons/XIcon";
+import FooterForm from "./FooterForm";
 
 export default function Footer() {
   return (
@@ -60,8 +60,8 @@ export default function Footer() {
             <div className="border-b-[1px] pb-3 font-bold text-primary">
               PRODUCTS
             </div>
-            <Link href="/about-us">Darum Turbo</Link>
-            <Link href="/about-us">Darum Captain</Link>
+            <Link href="/darum-turbo">Darum Turbo</Link>
+            <Link href="/darum-captain">Darum Captain</Link>
           </div>
           {/* Center part third row */}
           <div className="flex flex-col gap-4">

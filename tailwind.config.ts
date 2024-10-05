@@ -21,12 +21,14 @@ const config: Config = {
 
       animation: {
         scroll: 'scroll 20s linear infinite',
-        blink: 'blink 2s ease-in-out both'
-        // blink: 'blink 1s ease-in-out var(--animation-delay) both'
+        blink: 'blink 2s ease-in-out both',
       },
       colors: {
+        'danger': '#FF0500',
+        'bg-danger': 'rgba(255, 5, 0, 0.1)',
         'primary': '#F46F3B',
         'tertiary': '#FDEDE7',
+        'secondary': '#5B91F5',
         'white': '#ffffff',
         'tx-black': '#171412',
         'badge': '#00B73F',
@@ -49,6 +51,10 @@ const config: Config = {
         'powder-blue': 'rgba(91, 145, 245, 0.1)',
         'powder-yellow': "#FEF8F5",
         'silk-white': "#FEEAE2",
+        'grey-foreground': '#F7F9FC',
+        'up-coming': 'rgba(169, 87, 18, 0.1)',
+        'up-coming-text': 'rgba(169, 87, 18, 1)',
+        'grey': '#6B7280'
       },
       backgroundImage: {
         // 'bg-gradient-white': 'linear-gradient(180.51deg, #FEF8F5 89.96%, #FFFFFF 99.56%)',

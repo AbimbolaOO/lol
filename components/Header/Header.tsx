@@ -53,12 +53,35 @@ export default function Header() {
                   link.label === "Darum My Business"
                     ? "bg-tx-gradient bg-clip-text text-transparent"
                     : "text-tx-black",
+                  pathname.includes(link.href) && "link-scribble relative",
                 )}
               >
                 {link.label}
               </div>
             </Link>
           ))}
+          {/* ----0---- */}
+          {/* {navLinks.map((link) => (
+            <Link
+              href={link.href}
+              key={link.href}
+              className={clsx(
+                pathname.includes(link.href) &&
+                  "bg-button-gradient font-medium",
+                "flex items-center rounded-[8px] px-[16px] py-[12px] text-[12px]",
+              )}
+            >
+              <div
+                className={clsx(
+                  pathname.includes(link.href)
+                    ? "bg-tx-gradient bg-clip-text text-transparent"
+                    : "text-tx-black",
+                )}
+              >
+                {link.label}
+              </div>
+            </Link>
+          ))} */}
         </nav>
 
         <div className="flex gap-[12px]">
